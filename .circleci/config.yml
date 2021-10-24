@@ -11,7 +11,7 @@ working_dir: &working_dir ~/app
     - run: gem install bundler:2.1.4
     - run: bundle install --jobs=4 --retry=4 --path vendor/bundle
     - run: bundle exec rake rubocop
-    
+    - run: exit
   working_directory: *working_dir
 
 version: 2.0
